@@ -94,9 +94,9 @@ fun buildSoftSkinMask(segmenter: ImageSegmenter, bitmap: Bitmap): Bitmap {
 }
 
 /** Writes [mask] as a PNG into the app external files dir and returns the file. */
-fun saveMaskPng(context: Context, mask: Bitmap): File {
+fun saveMaskPng(context: Context, mask: Bitmap, prefix: String = "skin_mask"): File {
     val dir = context.getExternalFilesDir(null) ?: context.filesDir
-    val file = File(dir, "skin_mask_${System.currentTimeMillis()}.png")
+    val file = File(dir, "${prefix}_${System.currentTimeMillis()}.png")
     FileOutputStream(file).use { mask.compress(Bitmap.CompressFormat.PNG, 100, it) }
     return file
 }
