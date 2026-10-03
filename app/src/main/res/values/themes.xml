@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Window-level theme only; all UI styling comes from Compose MaterialTheme.
+         Framework Material theme keeps a zero-dependency, no-action-bar window. -->
+    <style name="Theme.Mimic" parent="android:Theme.Material.Light.NoActionBar" />
+</resources>

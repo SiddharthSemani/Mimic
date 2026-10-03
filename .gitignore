@@ -1,0 +1,31 @@
+# Built application files / build output
+*.apk
+*.aar
+*.ap_
+*.aab
+*.dex
+*.class
+build/
+bin/
+gen/
+out/
+
+# Gradle
+.gradle/
+
+# Local configuration (SDK path, signing) — machine-specific, never commit
+local.properties
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Keystores
+*.jks
+*.keystore
+
+# macOS
+.DS_Store
