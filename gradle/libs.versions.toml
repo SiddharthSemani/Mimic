@@ -5,6 +5,7 @@ coreKtx = "1.17.0"
 activityCompose = "1.10.1"
 composeBom = "2025.02.00"
 coil = "2.7.0"
+mediapipeTasksVision = "0.10.35"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -17,6 +18,8 @@ androidx-compose-material3 = { group = "androidx.compose.material3", name = "mat
 # Coil: async image loading from a content:// Uri. Earns its place — hand-rolling
 # Uri decode + threading + sampling would be ~200 lines of fiddly Bitmap code.
 coil-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
+# MediaPipe Tasks Vision: on-device ImageSegmenter (multiclass selfie model).
+mediapipe-tasks-vision = { group = "com.google.mediapipe", name = "tasks-vision", version.ref = "mediapipeTasksVision" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
